@@ -97,11 +97,25 @@ body {
     font-weight: 600;
     letter-spacing: 1px;
     z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color: #00abf0;
 }
 
 .btn-box a:nth-child(2) {
     background: transparent;
     color: #00abf0;
+}
+
+.btn-box a:nth-child(2):hover {
+    color: #081b29;
+}
+
+.btn-box a:nth-child(2)::before {
+    background: #00abf0;
 }
 
 .btn-box a::before { 
@@ -111,6 +125,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: red;
+    background: #081b29;
     z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
 }
